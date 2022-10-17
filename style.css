@@ -1,0 +1,83 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+:root {
+    --black: black;
+    --white: white;
+    --red: rgb(253, 43, 6);
+    --ff-poppins: "Poppins", sans-serif;
+    --ff-helvetica: "helvetica";
+    --transition-300: 300ms ease;
+    --black-85: rgba(0, 0, 0, 0.5);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@font-face {
+    font-family: "helvetica";
+    src: url(../assets/fonts/helvetica-light.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.logoContainer a {
+    color: var(--red);
+    font-weight: bolder;
+    font-size: 2.1rem;
+
+    font-family: var(--ff-poppins);
+    text-decoration: none;
+}
+
+.logoContainer span {
+    color: var(--white);
+    font-family: var(--ff-poppins);
+    font-weight: 400;
+}
+marquee {
+    color: white;
+    margin-top: 50px;
+    font-family: var(--ff-poppins);
+
+    font-size: 30px;
+}
+.getback {
+    color: white;
+    font-size: 2.1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+    font-family: var(--ff-poppins);
+}
+
+@media (max-width: 400px) {
+    marquee {
+        font-size: 20px;
+    }
+
+    .logoContainer a {
+        font-size: 1.5rem;
+        margin-top: 30%;
+    }
+
+    .getback {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: ) {
+}
